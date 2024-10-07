@@ -22,144 +22,33 @@ class student{
          // int arrayMarks[] =new int [num];
         int credits[]=new int[num];
         for (int i=0;i<num;i++){
-            System.out.println("enter the " +(i+1)+"subject marks");
+            System.out.println("enter the " +(i+1)+" subject marks");
             arrMarks[i]=sc.nextInt();
             System.err.println("enter the credits");
             credits[i]=sc.nextInt();
         }
         for(int i=0;i<num;i++){
             if (arrMarks[i] <=100 && arrMarks[i]>=90){
-                 switch(credits[i]){
-                    case 4:
-                      arrCredits[i]=40;
-                      break;
-                    case 3:
-                      arrCredits[i]=30;
-                      break;
-                    case 2:
-                      arrCredits[i]=20;
-                      break;
-                    case 1:
-                      arrCredits[i]=10;
-                      break;
-                    default:
-                       System.out.println("enter the correct credits of the subject");
-                       break;
-                 }
+                 arrCredits[i]=credits[i]*10;
             }
             else if(arrMarks[i] <90 && arrMarks[i]>=80){
-                switch(credits[i]){
-                    case 4:
-                      arrCredits[i]=36;
-                      break;
-                    case 3:
-                      arrCredits[i]=27;
-                      break;
-                    case 2:
-                      arrCredits[i]=18;
-                      break;
-                    case 1:
-                      arrCredits[i]=9;
-                      break;
-                    default:
-                       System.out.println("enter the correct credits of the subject");
-                       break;
-                 }
+                arrCredits[i]=credits[i]*10-credits[i];
             }
             else if(arrMarks[i] <80 && arrMarks[i]>=70){
-                switch(credits[i]){
-                    case 4:
-                      arrCredits[i]=32;
-                      break;
-                    case 3:
-                      arrCredits[i]=24;
-                      break;
-                    case 2:
-                      arrCredits[i]=16;
-                      break;
-                    case 1:
-                      arrCredits[i]=8;
-                      break;
-                    default:
-                       System.out.println("enter the correct credits of the subject");
-                       break;
-                 }
+              arrCredits[i]=credits[i]*10-credits[i]*2;
+                
             }
             else if(arrMarks[i] <70 && arrMarks[i]>=60){
-                switch(credits[i]){
-                    case 4:
-                      arrCredits[i]=28;
-                      break;
-                    case 3:
-                      arrCredits[i]=21;
-                      break;
-                    case 2:
-                      arrCredits[i]=14;
-                      break;
-                    case 1:
-                      arrCredits[i]=7;
-                      break;
-                    default:
-                       System.out.println("enter the correct credits of the subject");
-                       break;
-                 }
+              arrCredits[i]=credits[i]*10-credits[i]*3;
             }
             else if(arrMarks[i] <60&& arrMarks[i]>=50){
-                switch(credits[i]){
-                    case 4:
-                      arrCredits[i]=24;
-                      break;
-                    case 3:
-                      arrCredits[i]=18;
-                      break;
-                    case 2:
-                      arrCredits[i]=12;
-                      break;
-                    case 1:
-                      arrCredits[i]=6;
-                      break;
-                    default:
-                       System.out.println("enter the correct credits of the subject");
-                       break;
-                 }
+              arrCredits[i]=credits[i]*10-credits[i]*4;
             }
             else if(arrMarks[i] <50&& arrMarks[i]>=40){
-                switch(credits[i]){
-                    case 4:
-                      arrCredits[i]=22;
-                      break;
-                    case 3:
-                      arrCredits[i]=15;
-                      break;
-                    case 2:
-                      arrCredits[i]=9;
-                      break;
-                    case 1:
-                      arrCredits[i]=5;
-                      break;
-                    default:
-                       System.out.println("enter the correct credits of the subject");
-                       break;
-                 }
+              arrCredits[i]=credits[i]*10-credits[i]*5;
             }
             else if( arrMarks[i] <40 && arrMarks[i]>=30){
-                switch(credits[i]){
-                    case 4:
-                      arrCredits[i]=18;
-                      break;
-                    case 3:
-                      arrCredits[i]=12;
-                      break;
-                    case 2:
-                      arrCredits[i]=6;
-                      break;
-                    case 1:
-                      arrCredits[i]=4;
-                      break;
-                    default:
-                       System.out.println("enter the correct credits of the subject");
-                       break;
-                 }
+              arrCredits[i]=credits[i]*10-credits[i]*6;
             }
             else if (arrMarks[i]<30){
                     System.out.println(" fail ");
@@ -204,9 +93,6 @@ class studentinfo{
          
          s[k].scpa();
 
-    }
-
- 
-        
+    }       
     }
 }
