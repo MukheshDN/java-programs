@@ -17,14 +17,14 @@ class student{
         
     }
    
-    void scpa(){
+    void sgpa(){
         Scanner sc =new Scanner(System.in);
          // int arrayMarks[] =new int [num];
         int credits[]=new int[num];
         for (int i=0;i<num;i++){
             System.out.println("enter the " +(i+1)+" subject marks");
             arrMarks[i]=sc.nextInt();
-            System.err.println("enter the credits");
+            System.out.println("enter the credits");
             credits[i]=sc.nextInt();
         }
         for(int i=0;i<num;i++){
@@ -63,8 +63,8 @@ class student{
         for(int m=0;m<num;m++){
            cSum=cSum+arrCredits[m];
         }
-        float scpa1=(float)(cSum)/(sum);
-        System.out.println(scpa1*10);
+        float sgpa1=(float)(cSum)/(sum);
+        System.out.println(sgpa1*10);
         
     
     }
@@ -91,7 +91,7 @@ class studentinfo{
 
          s[k]=new student (usn,name,n);
          
-         s[k].scpa();
+         s[k].sgpa();
 
     }       
     }
